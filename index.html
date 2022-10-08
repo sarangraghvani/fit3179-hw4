@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>tab_title</title>
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" 
+        integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/grids-responsive-min.css" />
+
+        <script type="text/javascript">
+
+            var data1 = "vega/choropleth.json";
+            var data2 = "vega/linechart.vg.json";
+            var data3 = "vega/pie.vg.json";
+            var data4 = "vega/sankey.vg.json"
+
+            vegaEmbed('#id2', data1).then(function(result) {
+             }).catch(console.error);
+
+             vegaEmbed('#id3', data2).then(function(result) {
+             }).catch(console.error);
+
+             vegaEmbed('#id5', data3).then(function(result) {
+             }).catch(console.error);
+
+             vegaEmbed('#id7', data4).then(function(result) {
+             }).catch(console.error);
+
+        </script>
+
+        <style>
+
+            /* css code here */
+            body {
+                background-color: lightblue;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                margin-right: 30px;
+                margin-left: 30px;
+            }
+            h1 {
+                text-align: center;
+                font-family: Helvetica;
+                font-size: 50px;
+                text-rendering:optimizeLegibility;
+                font-weight: 350;
+            }
+            span {
+                color: blue;
+            }
+
+        </style>
+
+        <div id="title" class="pure-u-1" style="border:2px solid black;">
+            <h1><span>Australia's </span>Economy Against The World</h1>
+        </div>
+
+    </head>
+
+    <body>      
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-3">
+                <div id="id1">
+                    <h2>section title</h2>
+                    <p> Lorem ipsum <span>Australia </span>dolor sit amet, consecteture adipisxing elit, sed do eisumod temport incididunt ut labore 
+                        et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+            <div class="pure-u-2-3">
+                <div id="id2"></div>
+            </div>
+        </div>
+        <!-- end grid group-->
+
+        <!-- pure grid group -->
+        <div class="pure-g"> 
+            <div class="pure-u-1-3">
+                <div id="id3"></div>
+            </div>
+            <div class="pure-u-1-3">
+                <div id="id4">
+                    <h2>section title 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consecteture adipisxing elit, sed do eisumod temport incididunt ut labore 
+                        et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="pure-u-1-3">
+                <div id="id5">
+                    <h2>section title 3</h2>
+                    <p> Lorem ipsum dolor sit amet, consecteture adipisxing elit, sed do eisumod temport incididunt ut labore 
+                    et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat.</p> 
+                </div>
+            </div>
+        </div>
+        <!-- end grid group-->
+
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <div id="id6"></div>
+                <p>hi</p>
+            </div>
+            <div class="pure-u-1-2">
+                <div id="id7"></div>
+                <p>hi</p>
+            </div>
+        </div>
+        <!-- end grid group-->
+    </body>
+
+</html>
+
+<!-- 
+    Things to do:
+        - week 4 studio => css styling, fonts, color, layout, multiple css files
+        - adv. vis: cartogram with sankey
+        - 
+
+    References:
+        - https://www.elastic.co/blog/sankey-visualization-with-vega-in-kibana
+        - 
+-->

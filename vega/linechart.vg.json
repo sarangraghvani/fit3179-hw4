@@ -3,39 +3,7 @@
     "title": "some title",
     "data": {"url": "data/world_country_gdp.csv"},
     "width": 400,
-    "height": 300,
-
-    "params": [ {
-        "name": "Country_selection",
-        "bind": {
-            "input": "select",
-            "options": [
-              null,
-              "Australia",
-              "United States",
-              "United Kingdom",
-              "China",
-              "India",
-              "Japan"
-            ],
-            "labels":[
-              "Show All",
-              "Australia",
-              "United States",
-              "United Kingdom",
-              "China",
-              "India",
-              "Japan"
-      ],
-            "name": "Country Selection: "
-          }
-      } ],
-      "transform": [
-        {"filter": "datum.year > 0"},
-        {"filter": "datum.GDP_per_capita > 0"},
-        {
-          "filter": "Country_selection == null || datum.Country Name == Country_selection"
-        } ],      
+    "height": 300,      
 
     "encoding": {"x": {"field": "year", "type": "temporal"}},
     "layer": [
